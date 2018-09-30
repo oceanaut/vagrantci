@@ -9,4 +9,4 @@ RUN apt-get update && apt-get install -y \
     && echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 COPY requirements.yml /etc/ansible/requirements.yml
 COPY test.yml /etc/ansible/test.yml
-RUN ansible-galaxy install -r /etc/ansible/requirements.yml
+#RUN ansible-galaxy install -r /etc/ansible/requirements.yml
